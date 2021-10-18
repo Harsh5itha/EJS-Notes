@@ -5,6 +5,19 @@
     <title>To find Day</title>
   </head>
   <body>
-    <h1>Yay Today is <%=kindOfday%> </h1>
+
+      <h1 style="color: magenta"><%=kindOfday%> </h1>
+      <ul>
+        
+        <% for(var i = 0; i<newlistitems.length; i++){ %>
+          <li><%= newlistitems[i] %> </li>
+        <% } %>
+
+      </ul>
+      <form class="" action="/" method="post">
+        <input type="text" name="newitem">
+        <button type="submit" name="button">Add</button>
+      </form>
+
   </body>
 </html>
